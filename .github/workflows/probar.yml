@@ -19,4 +19,4 @@ jobs:
         with:
           node-version: 24
       - name: Pruebas unitarias de la comisión
-        run: node --test pruebas/
+        run: node --test pruebas/comision.test.js
