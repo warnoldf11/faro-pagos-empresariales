@@ -1,0 +1,22 @@
+# Práctica S8 · Equipo Factoring Digital: pruebas antes de publicar.
+name: Pruebas de la comisión
+on:
+  push:
+    branches: [main]
+    paths: ["pruebas/**", ".github/workflows/probar.yml"]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read          # mínimo privilegio para el token
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Pruebas unitarias de la comisión
+        run: node --test pruebas/
