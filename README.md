@@ -1,4 +1,5 @@
 # Faro · Pagos Empresariales
+n**Equipo: Factoring Digital**
 
 Proyecto demostrativo del docente para **Arquitectura para Plataformas Fintech** (UIDE, Finanzas y Negocios Digitales).
 Faro "ilumina" a los proyectos de los estudiantes: cada semana del curso es una **estación** donde el concepto se puede provocar y ver en vivo.
